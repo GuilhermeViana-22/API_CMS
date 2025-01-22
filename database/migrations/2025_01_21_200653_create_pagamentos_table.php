@@ -15,6 +15,10 @@ class CreatePagamentosTable extends Migration
     {
         Schema::create('pagamentos', function (Blueprint $table) {
             $table->id();
+            $table->integer('user_id');
+            $table->integer('curso_id');
+            $table->float('valor');
+            $table->float('status');
             $table->timestamps();
         });
     }

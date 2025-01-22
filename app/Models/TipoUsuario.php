@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class TipoUsuario extends Model
 {
-    use HasFactory;
+    protected $fillable = ['tipo_usuario'];
 }

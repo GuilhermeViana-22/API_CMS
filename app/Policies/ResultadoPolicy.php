@@ -2,11 +2,11 @@
 
 namespace App\Policies;
 
-use App\Models\Professor;
+use App\Models\Resultado;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
-class ProfessorPolicy
+class ResultadoPolicy
 {
     use HandlesAuthorization;
 
@@ -25,10 +25,10 @@ class ProfessorPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Professor  $professor
+     * @param  \App\Models\Resultado  $resultado
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, Professor $professor)
+    public function view(User $user, Resultado $resultado)
     {
         //
     }
@@ -48,10 +48,10 @@ class ProfessorPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Professor  $professor
+     * @param  \App\Models\Resultado  $resultado
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, Professor $professor)
+    public function update(User $user, Resultado $resultado)
     {
         //
     }
@@ -60,10 +60,10 @@ class ProfessorPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Professor  $professor
+     * @param  \App\Models\Resultado  $resultado
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, Professor $professor)
+    public function delete(User $user, Resultado $resultado)
     {
         //
     }
@@ -72,10 +72,10 @@ class ProfessorPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Professor  $professor
+     * @param  \App\Models\Resultado  $resultado
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, Professor $professor)
+    public function restore(User $user, Resultado $resultado)
     {
         //
     }
@@ -84,10 +84,10 @@ class ProfessorPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Professor  $professor
+     * @param  \App\Models\Resultado  $resultado
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, Professor $professor)
+    public function forceDelete(User $user, Resultado $resultado)
     {
         //
     }
